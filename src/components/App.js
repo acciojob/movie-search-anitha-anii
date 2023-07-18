@@ -34,9 +34,11 @@ const App = () => {
   return ( 
     <div>
       {/* Do not remove the main div */}
+      <form>
       <label>Search Movie</label>
       <input type="search" value={search} onChange={(e) => setSearch(e.target.value)} />
       <button type="button" onClick={() => setSearch(search)}>Search</button>
+      </form>
       {error && <p className="error">{error}</p>}
       {movies.length > 0 && <MovieList movies={movies} />}
     </div>
