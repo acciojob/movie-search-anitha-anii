@@ -31,7 +31,7 @@ const App = () => {
     }
   }, [search]);
 
-  return (
+  return ( 
     <div>
       {/* Do not remove the main div */}
       <label>Search Movie</label>
